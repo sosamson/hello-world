@@ -17,7 +17,7 @@ class HelloWorldServiceProvider extends ServiceProvider
 
         include(__DIR__ . '/routes.php');
 
-        $this->loadViewsFrom(__DIR__ . 'views', 'HelloWorld');
+        $this->loadViewsFrom(__DIR__ . '/views', 'HelloWorld');
     }
 
     /**
@@ -30,7 +30,7 @@ class HelloWorldServiceProvider extends ServiceProvider
         /*
          * Register the service provider for the dependency.
          */
-        $this->app->register('Sosamson\HelloWorld');
+        // $this->app->register('\packages\sosamson\helloworld\src');
         /*
          * Create aliases for the dependency.
          */
