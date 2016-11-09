@@ -1,9 +1,9 @@
 {
     "name": "sosamson/helloworld",
-    "require": {}
+    "require": {},
     "autoload": {
-	 "psr-4": {
-	     "Sosamson\\HelloWorld\\": "src/"
-	 }
+        "psr-4": {
+	        "Sosamson\\HelloWorld\\": "src/"
+	    }
     }
 }
