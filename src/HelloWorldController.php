@@ -13,10 +13,10 @@ class HelloWorldController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-     public function index()
-     {     
-         $message = 'Hello World';
-	 return view('HelloWorld::welcome', compact('message'));
-     }
+    public function index()
+    {     
+        $message = 'Hello World';
+        return view('HelloWorld::welcome', compact('message'));
+    }
 
 }

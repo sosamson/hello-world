@@ -15,9 +15,9 @@ class HelloWorldServiceProvider extends ServiceProvider
     {
         $this->app->make(HelloWorldController::class);
 
-	include(__DIR__ . '/routes.php');
+        include(__DIR__ . '/routes.php');
 
-	$this->loadViewsFrom(__DIR__ . 'views', 'HelloWorld');
+        $this->loadViewsFrom(__DIR__ . 'views', 'HelloWorld');
     }
 
     /**
@@ -27,6 +27,13 @@ class HelloWorldServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        /*
+         * Register the service provider for the dependency.
+         */
+        $this->app->register('Sosamson\HelloWorld');
+        /*
+         * Create aliases for the dependency.
+         */
+        
     }
 }
